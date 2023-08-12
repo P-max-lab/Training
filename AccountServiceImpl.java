@@ -38,6 +38,7 @@ public class AccountServiceImpl implements AccountService {
     @Override
     public int openAccount(Account account) {
         System.out.println(account.toString());
+        System.out.println("Hello");
         accountRepository.save(account);
         return 0;
     }
